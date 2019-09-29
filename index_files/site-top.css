@@ -1,0 +1,460 @@
+/* ¬ключение кешировани€ background-image дл€ IE */
+html 
+{
+  filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}
+
+/* ¬нешн€€ таблица меню (‘он меню) */
+TABLE.TPAGEMENU_MAIN_OUTERTABLE
+{
+	width: 100%; height: 26px;
+}
+
+	/* Ћева€, права€ верхн€€ секци€ фона меню */
+	TD.TPAGEMENU_MAIN_L_T, TD.TPAGEMENU_MAIN_R_T
+	{
+		width: 8px; height: 4px;
+		background-image: url(../gif/site-top/main_t.gif);
+		background-repeat: repeat-x;
+	}
+	
+	/* —редн€€ верхн€€ секци€ фона меню */
+	TD.TPAGEMENU_MAIN_M_T
+	{
+		height: 4px;
+		background-image: url(../gif/site-top/main_t.gif);
+		background-repeat: repeat-x;
+	}
+
+	/* Ћева€ средн€€ секци€ фона меню */
+	TD.TPAGEMENU_MAIN_L_M
+	{
+		width: 8px;
+		background-image: url(../gif/site-top/main_lm.gif);
+		background-repeat: no-repeat;
+	}
+	
+	/* —редн€€ средн€€ секци€ фона меню */
+	TD.TPAGEMENU_MAIN_M_M
+	{
+    background-image: url(../gif/site-top/main_mm.gif);
+    background-repeat: repeat-x;
+		text-align: left;
+	}
+	
+		/* ¬нутренн€€ таблица меню (содержит элементы меню) */
+		TABLE.TPAGEMENU_MAIN_INNERTABLE_H
+		{
+			width: auto; height: auto;
+		}
+		TABLE.TPAGEMENU_MAIN_INNERTABLE_V
+		{
+			width: 100%; height: auto;
+		}
+		
+			/* ячейка содержаща€ элемент меню */
+			TD.TPAGEMENU_MAIN_ITEM
+			{
+        height: 18px;
+				padding: 0px;
+				text-decoration: none;
+        font-family: Tahoma; font-size: 11px; font-weight: bold;
+			}
+			
+				/* —сылка элемента меню */
+				A.TPAGEMENU_MAIN_ITEM_IE /* IE COMPATIBLE ONLY */
+				{
+					width: 100%;
+					background-color: transparent;
+          background-image: none;
+					border-style: none;
+					text-decoration: none;
+          padding-top: 2px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;
+					color: White;
+				}
+				A.TPAGEMENU_MAIN_ITEM_IE_selected /* IE COMPATIBLE ONLY */
+				{
+					width: 100%;
+          background-image: url(../gif/site-top/main_button_down.gif);
+          background-repeat: repeat-x;
+					border-style: solid; border-width: 1px;
+          border-color: #35589A;
+					text-decoration: none;
+          padding-top: 1px; padding-bottom: 2px; padding-left: 5px; padding-right: 5px;
+					color: White;
+				}
+				A.TPAGEMENU_MAIN_ITEM_IE:hover, /* IE COMPATIBLE ONLY */
+				A.TPAGEMENU_MAIN_ITEM_IE_selected:hover
+				{
+					width: 100%;
+          background-image: url(../gif/site-top/main_button_hover.gif);
+          background-repeat: repeat-x;
+          border-style: solid; border-width: 1px;
+          border-color: #35589A;
+					text-decoration: none;
+          padding-top: 1px; padding-bottom: 2px; padding-left: 5px; padding-right: 5px;
+					color: White;
+				}
+				A.TPAGEMENU_MAIN_ITEM /* NOT IE COMPATIBLE ONLY */
+				{
+					text-decoration: none;
+				}
+				A.TPAGEMENU_MAIN_ITEM:hover /* NOT IE COMPATIBLE ONLY */
+				{
+					text-decoration: none;
+				}
+			
+					/* –аст€житель ссылки элемента меню */
+					DIV.TPAGEMENU_MAIN_ITEM /* NOT IE COMPATIBLE ONLY */
+					{
+					  background-color: transparent;
+            background-image: none;
+					  border-style: none; border-width: 1px;
+					  text-decoration: none;
+            padding-top: 2px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px;
+					  color: White;
+					}
+					DIV.TPAGEMENU_MAIN_ITEM_selected /* NOT IE COMPATIBLE ONLY */
+					{
+            background-image: url(../gif/site-top/main_button_down.gif);
+            background-repeat: repeat-x;
+					  border-style: solid; border-width: 1px;
+            border-color: #35589A;
+					  text-decoration: none;
+            padding-top: 1px; padding-bottom: 2px; padding-left: 5px; padding-right: 5px;
+					  color: White;
+					}
+					DIV.TPAGEMENU_MAIN_ITEM:hover, /* NOT IE COMPATIBLE ONLY */
+					DIV.TPAGEMENU_MAIN_ITEM_selected:hover 
+					{
+            background-image: url(../gif/site-top/main_button_hover.gif);
+            background-repeat: repeat-x;
+            border-style: solid; border-width: 1px;
+            border-color: #35589A;
+					  text-decoration: none;
+            padding-top: 1px; padding-bottom: 2px; padding-left: 5px; padding-right: 5px;
+					  color: White;
+					}
+			
+						/* Ќижн€€ стрелка кнопки меню */
+						DIV.TPAGEMENU_MAIN_ARROW_DOWN
+						{
+							background-image: url(../gif/site-top/arrow_d.gif);
+							background-repeat: no-repeat;
+							background-position: right 65%;
+							padding-right: 13px;
+							margin-right: 2px;
+						}
+																	
+						/* ¬ерхн€€ стрелка кнопки меню */
+						DIV.TPAGEMENU_MAIN_ARROW_UP
+						{
+							background-image: url(../gif/site-top/arrow_u.gif);
+							background-repeat: no-repeat;
+							background-position: right;
+							padding-right: 13px;
+							margin-right: 2px;
+						}
+						
+						/* ќтсутствие стрелки кнопки меню */
+						DIV.TPAGEMENU_MAIN_ARROW_NONE
+						{
+							
+						}
+            
+              /*  артинка пункта меню */
+              IMG.TPAGEMENU_MAIN_PICTURE
+              {
+                margin-top: 0px;
+              }
+	
+	/* ѕрава€ средн€€ секци€ фона меню */
+	TD.TPAGEMENU_MAIN_R_M
+	{
+		width: 8px;
+		background-image: url(../gif/site-top/main_rm.gif);
+		background-repeat: no-repeat;
+	}
+	
+	/* Ћева€, права€ нижн€€ секци€ фона меню */
+	TD.TPAGEMENU_MAIN_L_B, TD.TPAGEMENU_MAIN_R_B
+	{
+		width: 8px; height: 4px;
+		background-image: url(../gif/site-top/main_b.gif);
+		background-repeat: repeat-x;
+	}
+	
+	/* —редн€€ нижн€€ секци€ фона меню */
+	TD.TPAGEMENU_MAIN_M_B
+	{
+		height: 4px;
+		background-image: url(../gif/site-top/main_b.gif);
+		background-repeat: repeat-x;
+	}
+	
+/* ¬нешн€€ таблица подменю (‘он подменю) */
+TABLE.TPAGEMENU_SUB_OUTERTABLE
+{
+	width: auto; height: auto;
+	position: absolute;  /* ќб€зательное значение absolute */
+	visibility: hidden;  /* ќб€зательное значение hidden */
+	left: 0px; top: 0px; /* –екомендуемые значени€ 0 0 */
+  z-index: 10;
+}
+
+	/* Ћева€ верхн€€ секци€ фона подменю */
+	TD.TPAGEMENU_SUB_L_T
+	{
+		width: 4px; height: 4px;
+		background-image: url(../gif/site-top/sub_lt.gif);
+		background-repeat: no-repeat;
+	}
+	
+	/* —редн€€ верхн€€ секци€ фона подменю */
+	TD.TPAGEMENU_SUB_M_T
+	{
+		height: 4px;
+		background-image: url(../gif/site-top/sub_mt.gif);
+		background-repeat: repeat-x;
+	}
+	
+	/* ѕрава€ верхн€€ секци€ фона подменю */
+	TD.TPAGEMENU_SUB_R_T
+	{
+		width: 4px; height: 4px;
+		background-image: url(../gif/site-top/sub_rt.gif);
+    background-repeat: no-repeat;
+	}
+
+	/* Ћева€ средн€€ секци€ фона подменю */
+	TD.TPAGEMENU_SUB_L_M
+	{
+		width: 4px;
+		background-image: url(../gif/site-top/sub_lm.gif);
+		background-repeat: repeat-y;
+	}
+	
+	/* —редн€€ средн€€ секци€ фона подменю */
+	TD.TPAGEMENU_SUB_M_M
+	{
+		background-color: #FFFCE0;
+	}
+	
+		/* ¬нутренн€€ таблица подменю (содержит элементы подменю) */
+		TABLE.TPAGEMENU_SUB_INNERTABLE
+		{
+			width: 100%; height: auto;
+		}
+		
+			/* ячейка содержаща€ элемент подменю */
+			TD.TPAGEMENU_SUB_ITEM
+			{
+				padding-top: 0px; padding-bottom: 0px;
+				text-decoration: none;
+        font-family: Tahoma; font-size: 11px; font-weight: bold;
+			}
+			
+				/* —сылка элемента подменю */
+				A.TPAGEMENU_SUB_ITEM_IE /* IE COMPATIBLE ONLY */
+				{
+					width: 100%;
+					background-color: transparent;
+					border-style: none;
+					text-decoration: none;
+					padding: 2px; padding-left: 4px; padding-right: 4px;
+					color: #0054A6;
+				}
+				A.TPAGEMENU_SUB_ITEM_IE_selected /* IE COMPATIBLE ONLY */
+				{
+					width: 100%;
+					background-color: #69ADEE;
+          border-style: none;
+					text-decoration: none;
+          padding: 2px; padding-left: 4px; padding-right: 4px;
+					color: White;
+				}
+				A.TPAGEMENU_SUB_ITEM_IE:hover, /* IE COMPATIBLE ONLY */
+				A.TPAGEMENU_SUB_ITEM_IE_selected:hover
+				{
+					width: 100%;
+					background-color: #448CCB;
+          border-style: none;
+					text-decoration: none;
+          padding: 2px; padding-left: 4px; padding-right: 4px;
+					color: White;
+				}
+				A.TPAGEMENU_SUB_ITEM /* NOT IE COMPATIBLE ONLY */
+				{
+					text-decoration: none;
+				}
+				A.TPAGEMENU_SUB_ITEM:hover /* NOT IE COMPATIBLE ONLY */
+				{
+					text-decoration: none;
+				}
+			
+					/* –аст€житель ссылки элемента подменю */
+					DIV.TPAGEMENU_SUB_ITEM /* NOT IE COMPATIBLE ONLY */
+					{
+					  background-color: transparent;
+					  border-style: none;
+					  text-decoration: none;
+					  padding: 2px; padding-left: 4px; padding-right: 4px;
+					  color: #0054A6;
+					}
+					DIV.TPAGEMENU_SUB_ITEM_selected /* NOT IE COMPATIBLE ONLY */
+					{
+					  background-color: #69ADEE;
+            border-style: none;
+					  text-decoration: none;
+            padding: 2px; padding-left: 4px; padding-right: 4px;
+					  color: White;
+					}
+					DIV.TPAGEMENU_SUB_ITEM:hover, /* NOT IE COMPATIBLE ONLY */
+					DIV.TPAGEMENU_SUB_ITEM_selected:hover
+					{
+					  background-color: #448CCB;
+            border-style: none;
+					  text-decoration: none;
+            padding: 2px; padding-left: 4px; padding-right: 4px;
+					  color: White;		
+					}
+					
+						/* ѕрава€ стрелка кнопки подменю */
+						DIV.TPAGEMENU_SUB_ARROW_RIGHT
+						{
+							background-image: url(../gif/site-top/arrow_r.gif);
+							background-repeat: no-repeat;
+							background-position: right;
+							padding-right: 20px;
+						}
+						
+						/* Ћева€ стрелка кнопки подменю */
+						DIV.TPAGEMENU_SUB_ARROW_LEFT
+						{
+							background-image: url(../gif/site-top/arrow_l.gif);
+							background-repeat: no-repeat;
+							background-position: left;
+							padding-left: 20px;
+						}
+						
+						/* ќтсутствие стрелки кнопки подменю */
+						DIV.TPAGEMENU_SUB_ARROW_NONE
+						{
+
+						}
+              /*  артинка пункта подменю */
+              IMG.TPAGEMENU_SUB_PICTURE
+              {
+                margin-top: 0px;
+              }
+	
+	/* ѕрава€ средн€€ секци€ фона подменю */
+	TD.TPAGEMENU_SUB_R_M
+	{
+		width: 4px; background-image: url(../gif/site-top/sub_rm.gif);
+		background-repeat: repeat-y;
+	}
+	
+	/* Ћева€ нижн€€ секци€ фона подменю */
+	TD.TPAGEMENU_SUB_L_B
+	{
+		width: 4px; height: 4px;
+		background-image: url(../gif/site-top/sub_lb.gif);
+		background-repeat: no-repeat;
+	}
+	
+	/* —редн€€ нижн€€ секци€ фона подменю */
+	TD.TPAGEMENU_SUB_M_B
+	{
+		height: 4px;
+		background-image: url(../gif/site-top/sub_mb.gif);
+		background-repeat: repeat-x;
+	}
+	
+	/* ѕрава€ нижн€€ секци€ фона подменю */
+	TD.TPAGEMENU_SUB_R_B
+	{
+		width: 4px; height: 4px;
+		background-image: url(../gif/site-top/sub_rb.gif);
+		background-repeat: no-repeat;
+	}
+  
+/* ¬нешн€€ таблица эффекта тени меню (‘он меню) */
+TABLE.TPAGEMENU_SHADOW_OUTERTABLE
+{
+  width: 100px; height: 100px;
+	position: absolute;       /* ќб€зательное значение absolute */
+	visibility: hidden;       /* ќб€зательное значение hidden */
+	left: 0px; top: 0px;      /* –екомендуемые значени€ 0 0 */
+  -moz-opacity: 0.40;       /* FireFox */
+  filter:alpha(opacity=40); /* IE */
+  opacity: 0.40;            /* Opera */
+}
+
+	/* Ћева€ верхн€€ секци€ эффекта тени */
+	TD.TPAGEMENU_SHADOW_L_T
+	{
+		width: 5px; height: 5px;
+		background-image: url(../gif/site-top/shadow_lt.gif);
+		background-repeat: no-repeat;
+	}
+	
+	/* —редн€€ верхн€€ секци€ эффекта тени */
+	TD.TPAGEMENU_SHADOW_M_T
+	{
+		height: 5px;
+    background-color: #7D7D7D;
+	}
+	
+	/* ѕрава€ верхн€€ секци€ эффекта тени */
+	TD.TPAGEMENU_SHADOW_R_T
+	{
+		width: 5px; height: 5px;
+		background-image: url(../gif/site-top/shadow_rt.gif);
+		background-repeat: no-repeat;
+	}
+
+	/* Ћева€ средн€€ секци€ эффекта тени */
+	TD.TPAGEMENU_SHADOW_L_M
+	{
+		width: 5px;
+		background-color: #7D7D7D;
+	}
+	
+	/* —редн€€ средн€€ секци€ эффекта тени */
+	TD.TPAGEMENU_SHADOW_M_M
+	{
+		background-color: #7D7D7D;
+		text-align: left;
+    font-size: 1px; font-weight: normal;
+	}
+  
+  /* ѕрава€ средн€€ секци€ эффекта тени */
+	TD.TPAGEMENU_SHADOW_R_M
+	{
+		width: 5px;
+		background-color: #7D7D7D;
+	}
+	
+	/* Ћева€ нижн€€ секци€ эффекта тени */
+	TD.TPAGEMENU_SHADOW_L_B
+	{
+		width: 5px; height: 5px;
+		background-image: url(../gif/site-top/shadow_lb.gif);
+		background-repeat: no-repeat;
+	}
+	
+	/* —редн€€ нижн€€ секци€ эффекта тени */
+	TD.TPAGEMENU_SHADOW_M_B
+	{
+		height: 5px;
+		background-color: #7D7D7D;
+	}
+	
+	/* ѕрава€ нижн€€ секци€ эффекта тени */
+	TD.TPAGEMENU_SHADOW_R_B
+	{
+		width: 5px; height: 5px;
+		background-image: url(../gif/site-top/shadow_rb.gif);
+		background-repeat: no-repeat;
+	}	

@@ -1,0 +1,126 @@
+.top_bar {
+        FONT-FAMILY: tahoma; COLOR: #c6ccdb; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.login {
+        FONT-FAMILY: tahoma; COLOR: #05225c; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.client_zone {
+        FONT-FAMILY: Verdana; COLOR: #05225c; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.white {
+        FONT-FAMILY: verdana; COLOR: black; FONT-SIZE: 11px
+}
+.news {
+        COLOR: black; FONT-SIZE: 10px
+}
+a.nnbtitle {
+        font-weight: bold;
+        color: #4E6D8C;
+        font-size: 11px;
+        font-family: tahoma;
+        text-decoration: none;
+}
+a.nnbtitle:hover {
+        color: #8BB3DA;
+        font-weight: bold;
+        font-size: 11px;
+        font-family: tahoma;
+        text-decoration: none;
+        }
+A.nnbsub {
+        FONT-FAMILY: tahoma; COLOR: #4e6d8c; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.nnbsub:hover {
+        FONT-FAMILY: tahoma; COLOR: #336699; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+BODY {
+        FONT-FAMILY: tahoma; COLOR: #00366d; FONT-SIZE: 12px
+}
+TD {
+        FONT-FAMILY: tahoma; COLOR: #00366d; FONT-SIZE: 12px
+}
+A {
+        BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT-FAMILY: verdana; COLOR: #05225c; FONT-SIZE: 11px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; TEXT-DECORATION: none
+}
+A:hover {
+        BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT-FAMILY: verdana; COLOR: #6495ED; FONT-SIZE: 11px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; TEXT-DECORATION: none
+}
+A IMG {
+        BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+A.lang {
+        COLOR: #c6ccdb; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.lang:hover {
+        COLOR: White; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.menu {
+        FONT-FAMILY: tahoma; COLOR: #4e6d8c; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.menu_left {
+        TEXT-ALIGN: left
+}
+A.topnews {
+        BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT-FAMILY: verdana; COLOR: #05225c; FONT-SIZE: 11px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; TEXT-DECORATION: none
+}
+A.topnews IMG {
+        BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+
+#rows              {margin:5 0; border-top:1px solid #eaeaea;}
+#rows a            {text-decoration:underline}
+#rows th           {padding-left:5;height:30;border-bottom:1px solid silver;background: white;text-align:left;color: black;font:12px Tahoma}
+#rows td.th      {padding-left:5;height:30;border-top:1px solid silver;background: white;text-align:left;color: black;font:12px Tahoma}
+#rows td           {padding-left:5;height:28;border-bottom:1px solid #eaeaea;font:13px Tahoma}
+
+#rows tr.onx    {background-color: #F4F4F4;}
+#rows tr.onx2   {background-color: #F4F4F4;}
+
+.rsi_autocomplete_info {color:gray}
+
+.ui-autocomplete {
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+  text-align:left;
+}
+.ui-autocomplete-loading { background: white url('auto_indicator.gif') right center no-repeat; }
+.ui-autocomplete-input {
+	font:12px Tahoma;
+  color: #3660DA;
+  font-weight: bold;
+}
+
+
+.s_sn  {color: #6F28F0}
+.s_desc {font-size:10px;}
+
+.delx {
+  width: 16px;  height: 12px;
+  cursor: pointer;
+  background: url(../img/del.gif) center no-repeat ;
+}    
+.delx:hover { background: url(../img/del-red.gif) center no-repeat ;}
+
+.addx {
+  width: 16px;  height: 12px;
+  cursor: pointer;
+  background: url(../img/add.gif) center no-repeat ;
+}    
+
+ .inpDate { padding:2px 4px; border:1px solid #333; border-right:1px solid #CCC; border-bottom:1px solid #CCC;width:100px; background:#FFF url(bcg-dp.gif) no-repeat 100% 50%; }
+
+ .geolocation { padding:2px 4px; border:1px solid #333; border-right:1px solid #CCC; border-bottom:1px solid #CCC; background:#FFF url(map-marker.png) no-repeat 100%; }
+
+.logo {
+    position: absolute;
+    top: 32px;
+    right: 5px;
+    width: 169px;
+    height: 66px;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin: 0;
+    background: url(/img/logo.png) no-repeat;
+    z-index: 1;
+}
